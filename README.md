@@ -8,6 +8,7 @@ Given roles in the project 👉 Erdei Gergő: Webprograming, Constantine: Coding
 - HTML(5) 🟠
 - JavaScript 🟡 (my beloved one)
 - BootStrap 🟣
+- Flutter (UI)🔵
 ### Deadline of the project: 📆🌨
 > Must be finished -> Nov 30.
 ### Trello Workspace: 📮
