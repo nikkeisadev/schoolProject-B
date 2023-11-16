@@ -21,7 +21,7 @@ https://miklospeter.wordpress.com
 You can check here the team's current state!
 | Names    |   Gergő   |  Constantine  |
 |    ---   |    ---    |    ---     |
-| Ready    |    ❌    |     ❌     |
+| Ready    |    ✔     |     ✔      |
 | Tested   |    ❌    |     ❌     |
 | Finished |    ❌    |     ❌     |
 
