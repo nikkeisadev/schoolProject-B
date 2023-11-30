@@ -1,6 +1,8 @@
 # Mechwart 11.F Class | Project Repository Vol II. ⚜
 ## Vanished in Purple (C# Project)🟣
 > The members of the team: Erdei Gergő, Katona Konstantin.
+Trello Workspace: https://trello.com/b/Jst7W7Rc/schoolproject-b
+Figma Template: https://www.figma.com/file/igmPiTy7I9KfxRVBX5CXVC/Figma-basics?type=design&node-id=601-10&mode=design
 ### About the Project:💻
 Given roles in the project 👉 Erdei Gergő: Webprograming, Constantine: Coding, and Webprograming.
 ### All supported langs: 👨‍💻 
