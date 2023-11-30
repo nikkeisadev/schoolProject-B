@@ -20,7 +20,7 @@ Given roles in the project 👉 Erdei Gergő: Webprograming, Constantine: Coding
 ### Deadline of the project: 📆🌨
 > Must be finished -> Nov 30.
 ### Trello Workspace: 📮
-It's not neccesary I guess.
+On the top of the Github repo.
 ### Todo list: 📋
 > You can check it soon... 😴
 **Until then, you can find everything here.**
