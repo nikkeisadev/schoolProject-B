@@ -12,8 +12,8 @@ namespace Project
         public string Tipus { get; set; }
         public string Nev { get; set; }
         public string Parameter { get; set; }
-        public int Ar { get; set; }
-        public Alkatresz(string tipus, string nev, string parameter, int ar)
+        public double Ar { get; set; }
+        public Alkatresz(string tipus, string nev, string parameter, double ar)
         {
             Tipus = tipus;
             Nev = nev;

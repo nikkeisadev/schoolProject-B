@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -86,22 +87,22 @@ namespace Project
 
         public void Statisztika()
         {
-            int intelProciDb = 0;
-            int amdProciDb = 0;
-            int nvidiaKariDb = 0;
-            int amdKariDb = 0;
-            int osszProci = 0;
-            int osszKari = 0;
+            float intelProciDb = 0;
+            float amdProciDb = 0;
+            float nvidiaKariDb = 0;
+            float amdKariDb = 0;
+            float osszProci = 0;
+            float osszKari = 0;
             foreach (var item in alkatreszek)
             {
-                if (item.Tipus == "CPU" && item.Nev.Contains("Intel"))
+                if (item.Tipus.ToUpper() == "CPU" && item.Nev.ToUpper().Contains("INTEL"))
                     intelProciDb++;
-                else if (item.Tipus == "CPU" && item.Nev.Contains("AMD"))
+                else if (item.Tipus.ToUpper() == "CPU" && item.Nev.ToUpper().Contains("AMD"))
                     amdProciDb++;
 
-                if (item.Tipus == "GPU" && item.Nev.Contains("Nvidia"))
+                if (item.Tipus.ToUpper() == "GPU" && item.Nev.ToUpper().Contains("NVIDIA"))
                     nvidiaKariDb++;
-                else if (item.Tipus == "GPU" && item.Nev.Contains("AMD"))
+                else if (item.Tipus.ToUpper() == "GPU" && item.Nev.ToUpper().Contains("AMD"))
                     amdKariDb++;
 
                 if (item.Tipus == "CPU")
@@ -110,7 +111,28 @@ namespace Project
                     osszKari++;
             }
 
-            Console.WriteLine("");
+            Console.WriteLine($"Összesen {osszProci} db processzor szerepel a listában. Ebből {intelProciDb} db Intel ({intelProciDb / osszProci * 100}%) és {amdProciDb} db AMD ({amdProciDb / osszProci * 100}%)");
+            Console.WriteLine($"összesen {osszKari} db videókártya van a listában. Ebből {nvidiaKariDb} db Nvidia ({nvidiaKariDb / osszKari * 100}%) és {amdKariDb} db AMD ({amdKariDb / osszKari * 100}%)");
+        }
+
+        public void Akcio()
+        {
+            Console.Write("Válassa ki mely terméktípust (a kategória neve) vagy mindenre (minden) vagy semmire se (semmi) legyen érvényes az akció: ");
+            string akciosTipus = Console.ReadLine() ?? "";
+            double akcioErteke = 0;
+            if (akciosTipus.ToLower() != "semmi")
+            {
+                Console.Write("Írja be az akció értékét (százalékban): ");
+                akcioErteke = Convert.ToDouble(Console.ReadLine());
+            }
+            foreach (var item in alkatreszek)
+            {
+                if (akciosTipus.ToLower() == "minden")
+                    item.Ar -= Math.Round(item.Ar / 100 * akcioErteke);
+                else if (akciosTipus == item.Tipus)
+                    item.Ar -= Math.Round(item.Ar / 100 * akcioErteke);
+                Console.WriteLine(item.ToString());
+            }
         }
     }
 }
