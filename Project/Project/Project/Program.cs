@@ -6,9 +6,10 @@
         {
             Feladat f = new Feladat();
             f.Bevitel();
-            f.Kereses();
-            f.Statisztika();
-            f.Akcio();
+            //f.Kereses();
+            //f.Statisztika();
+            //f.Akcio();
+            f.Fajlbairas();
         }
     }
 }

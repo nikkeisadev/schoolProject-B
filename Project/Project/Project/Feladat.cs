@@ -134,5 +134,15 @@ namespace Project
                 Console.WriteLine(item.ToString());
             }
         }
+
+        public void Fajlbairas()
+        {
+            File.WriteAllText(@"file.txt", "");
+            foreach (var item in alkatreszek)
+            {
+                using (StreamWriter sw = File.AppendText(@"file.txt"))
+                        sw.WriteLine(item.ToString());
+            }
+        }
     }
 }
