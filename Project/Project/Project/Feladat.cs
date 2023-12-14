@@ -138,14 +138,15 @@ namespace Project
             {
                 Console.Write("Írja be az akció értékét (százalékban): ");
                 akcioErteke = Convert.ToDouble(Console.ReadLine());
-            }
-            foreach (var item in alkatreszek)
-            {
-                if (akciosTipus.ToLower() == "minden")
-                    item.Ar -= Math.Round(item.Ar / 100 * akcioErteke);
-                else if (akciosTipus.ToUpper() == item.Tipus)
-                    item.Ar -= Math.Round(item.Ar / 100 * akcioErteke);
-                Console.WriteLine(item.ToString());
+
+                foreach (var item in alkatreszek)
+                {
+                    if (akciosTipus.ToLower() == "minden")
+                        item.Ar -= Math.Round(item.Ar / 100 * akcioErteke);
+                    else if (akciosTipus.ToUpper() == item.Tipus)
+                        item.Ar -= Math.Round(item.Ar / 100 * akcioErteke);
+                    Console.WriteLine(item.ToString());
+                }
             }
         }
 
@@ -164,12 +165,16 @@ namespace Project
             string HtmlAlkatreszek = "";
             foreach (var item in alkatreszek)
             {
-                HtmlAlkatreszek += "    <div>" + item.ToString() + "</div>\n";
+                HtmlAlkatreszek += "        <div>" + item.ToString() + "</div>\n";
             }
-            string kod = "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>A generalt kod</title>\r\n</head>\r\n<body>\r\n" + HtmlAlkatreszek + "\r\n</body>\r\n</html>";
+            string htmlKod = "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n    <title>A generalt kod</title>\n<link rel=\"stylesheet\" href=\"style.css\"></head>\n<body>\n    <div class=\"flex-container\">\n" + HtmlAlkatreszek + "    </div>\n\n</body>\n</html>";
+            string cssKod = ".flex-container {\n    display: flex;\n    flex-wrap: wrap;\n    justify-content: space-between;\n}\n\ndiv{\n    margin: 1em;\n}";
             using (StreamWriter writer = new StreamWriter(@"htmlcss.txt"))
             {
-                writer.WriteLine(kod);
+                writer.WriteLine("HTML:");
+                writer.WriteLine(htmlKod);
+                writer.WriteLine("\nCss:");
+                writer.WriteLine(cssKod);
             }
 
         }

@@ -58,3 +58,18 @@ C:\Users\erdei.gergo.janos\Documents\Erdei Gergő\Project\C#\Project\obj\Debug\n
 C:\Users\erdei.gergo.janos\Documents\Erdei Gergő\Project\C#\Project\obj\Debug\net7.0\Project.pdb
 C:\Users\erdei.gergo.janos\Documents\Erdei Gergő\Project\C#\Project\obj\Debug\net7.0\Project.genruntimeconfig.cache
 C:\Users\erdei.gergo.janos\Documents\Erdei Gergő\Project\C#\Project\obj\Debug\net7.0\ref\Project.dll
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\bin\Debug\net7.0\Project.exe
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\bin\Debug\net7.0\Project.deps.json
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\bin\Debug\net7.0\Project.runtimeconfig.json
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\bin\Debug\net7.0\Project.dll
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\bin\Debug\net7.0\Project.pdb
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\obj\Debug\net7.0\Project.csproj.AssemblyReference.cache
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\obj\Debug\net7.0\Project.GeneratedMSBuildEditorConfig.editorconfig
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\obj\Debug\net7.0\Project.AssemblyInfoInputs.cache
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\obj\Debug\net7.0\Project.AssemblyInfo.cs
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\obj\Debug\net7.0\Project.csproj.CoreCompileInputs.cache
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\obj\Debug\net7.0\Project.dll
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\obj\Debug\net7.0\refint\Project.dll
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\obj\Debug\net7.0\Project.pdb
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\obj\Debug\net7.0\Project.genruntimeconfig.cache
+C:\11.F\Erdei Gergő\IKT\Második Project\schoolProject-B\Project\Project\Project\obj\Debug\net7.0\ref\Project.dll

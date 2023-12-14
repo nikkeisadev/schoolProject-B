@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\erdei.gergo.janos\\Documents\\Erdei Gergő\\Project\\schoolProject-B\\Project\\Project\\Project\\Project.csproj",
+      "projectUniqueName": "C:\\11.F\\Erdei Gergő\\IKT\\Második Project\\schoolProject-B\\Project\\Project\\Project\\Project.csproj",
       "projectName": "Project",
-      "projectPath": "C:\\Users\\erdei.gergo.janos\\Documents\\Erdei Gergő\\Project\\schoolProject-B\\Project\\Project\\Project\\Project.csproj",
+      "projectPath": "C:\\11.F\\Erdei Gergő\\IKT\\Második Project\\schoolProject-B\\Project\\Project\\Project\\Project.csproj",
       "packagesPath": "C:\\Users\\erdei.gergo.janos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\erdei.gergo.janos\\Documents\\Erdei Gergő\\Project\\schoolProject-B\\Project\\Project\\Project\\obj\\",
+      "outputPath": "C:\\11.F\\Erdei Gergő\\IKT\\Második Project\\schoolProject-B\\Project\\Project\\Project\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\erdei.gergo.janos\\AppData\\Roaming\\NuGet\\NuGet.Config",
