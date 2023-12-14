@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="hu"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A generalt kod</title>
+</head>
+<body>
+    <div>CPU; Intel Core i7-12700K; 3.6GHz 12-Core; 190000</div>
+    <div>CPU; Intel Core i3-12100; 3.2GHz 4-Core; 50000</div>
+
+</body>
+</html>

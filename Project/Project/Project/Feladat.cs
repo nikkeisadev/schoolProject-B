@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Globalization;
+using System.IO;
 using System.Linq;
+using System.Reflection.Metadata;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace Project
 {
@@ -15,9 +19,17 @@ namespace Project
             string alkatresz;
             do
             {
+                bool marSzerepel = false;
                 Console.Write("Adjon meg egy alkatreszt: ");
                 alkatresz = Console.ReadLine() ?? "";
-                if (alkatresz != "")
+
+                foreach (var item in alkatreszek)
+                {
+                    if (item.ToString().Replace(" ", "") == alkatresz.Replace(" ", ""))
+                        marSzerepel = true;                   
+                }
+
+                if (alkatresz != "" && marSzerepel == false)
                 {
                     string[] adat = alkatresz.Split(';');
                     string _tipus = adat[0];
@@ -27,6 +39,8 @@ namespace Project
                     Alkatresz uj = new Alkatresz(_tipus, _nev, _parameter, _ar);
                     alkatreszek.Add(uj);
                 }
+                else if (marSzerepel == true)
+                    Console.WriteLine("Ez az alkatrész már szerepel a listában.");
             } while (alkatresz != "");
         }
 
@@ -129,7 +143,7 @@ namespace Project
             {
                 if (akciosTipus.ToLower() == "minden")
                     item.Ar -= Math.Round(item.Ar / 100 * akcioErteke);
-                else if (akciosTipus == item.Tipus)
+                else if (akciosTipus.ToUpper() == item.Tipus)
                     item.Ar -= Math.Round(item.Ar / 100 * akcioErteke);
                 Console.WriteLine(item.ToString());
             }
@@ -143,6 +157,21 @@ namespace Project
                 using (StreamWriter sw = File.AppendText(@"file.txt"))
                         sw.WriteLine(item.ToString());
             }
+        }
+
+        public void HtmlCssKodGeneralasa()
+        {
+            string HtmlAlkatreszek = "";
+            foreach (var item in alkatreszek)
+            {
+                HtmlAlkatreszek += "    <div>" + item.ToString() + "</div>\n";
+            }
+            string kod = "<!DOCTYPE html>\n<html lang=\"hu\">\n<head>\r\n    <meta charset=\"UTF-8\">\r\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\r\n    <title>A generalt kod</title>\r\n</head>\r\n<body>\r\n" + HtmlAlkatreszek + "\r\n</body>\r\n</html>";
+            using (StreamWriter writer = new StreamWriter(@"htmlcss.txt"))
+            {
+                writer.WriteLine(kod);
+            }
+
         }
     }
 }
